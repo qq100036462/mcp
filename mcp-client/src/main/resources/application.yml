@@ -17,6 +17,8 @@ spring:
         version: 1.0.0
         request-timeout: 30s
         type: async
+        toolcallback:
+          enabled: true
         sse:
           connections:
             server1:
