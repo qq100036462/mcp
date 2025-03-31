@@ -1,0 +1,23 @@
+spring:
+  main:
+    banner-mode: off
+    allow-bean-definition-overriding: true
+  application:
+    name: mcp-client
+  ai:
+    ollama:
+      base-url: http://127.0.0.1:11434
+      chat:
+        options:
+          model: llama3.1:8b
+    mcp:
+      client:
+        name: my-client
+        enabled: true
+        version: 1.0.0
+        request-timeout: 30s
+        type: async
+        sse:
+          connections:
+            server1:
+              url: http://127.0.0.1:5000
